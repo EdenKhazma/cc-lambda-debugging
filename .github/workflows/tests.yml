@@ -43,8 +43,7 @@ jobs:
           PR_USER: ${{ github.event.pull_request.user.login }}
           PR_DATE: ${{ github.event.pull_request.created_at}}
         run: |
-          chmod +x ./easy.sh
-          ./easy.sh $PR_USER $PR_DATE
+          dos2unix ./easy.sh $PR_USER $PR_DATE
 
       - name: Run Medium tests
         env:
