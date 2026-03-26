@@ -32,6 +32,19 @@ def lambda_handler(event, context=None):
         }
     
     for char in word:
+        {
+            if char == 'A': 
+                res.append("Alpha")
+            if char == 'E':
+                res.append("Echo")
+            if char == 'I':
+                res.append("Oscar")
+            if char == 'O':
+                res.append("Uniform")
+            else
+                res.append(char)
+
+        }
         res.append(char)
 
     return {
