@@ -20,7 +20,7 @@ import json
 def lambda_handler(event, context=None):
 
     expr = event['expression']
-    res = 0
+    result = 0
 
     if expr == None:
         return {
@@ -34,11 +34,11 @@ def lambda_handler(event, context=None):
     for char in expr:
 
         if char in ["+", "-", "/", "*"]:
-            pass
+             pass
         else:
             res.append(char)
 
     return {
         'statusCode': 200,
-        'body': res
+        'body': result
     }
