@@ -9,7 +9,7 @@ import json
 
 def lambda_handler(event, context=None):
     celsius = event['temp']
-    
+    print("eden")
     if celsius == None:
         return {
             'statusCode': 200,
